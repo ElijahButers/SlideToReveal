@@ -50,6 +50,7 @@ class AnimatedMaskLabel: UIView {
   
   override func layoutSubviews() {
     layer.borderColor = UIColor.green.cgColor
+    gradientLayer.frame = bounds
   }
   
   override func didMoveToWindow() {
