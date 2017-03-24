@@ -33,6 +33,9 @@ class AnimatedMaskLabel: UIView {
     gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
     gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
     
+    let colors = [UIColor.black.cgColor, UIColor.white.cgColor, UIColor.black.cgColor]
+    gradientLayer.colors = colors
+    
     return gradientLayer
     }()
   
