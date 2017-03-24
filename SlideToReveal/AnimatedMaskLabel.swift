@@ -56,6 +56,8 @@ class AnimatedMaskLabel: UIView {
   override func didMoveToWindow() {
     super.didMoveToWindow()
     
+    layer.addSublayer(gradientLayer)
+    
   }
   
 }
