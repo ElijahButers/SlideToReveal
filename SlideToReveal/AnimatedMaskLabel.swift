@@ -63,6 +63,7 @@ class AnimatedMaskLabel: UIView {
     gradientAnimation.repeatCount = Float.infinity
     
     layer.addSublayer(gradientLayer)
+    gradientLayer.add(gradientAnimation, forKey: nil)
     
   }
   
