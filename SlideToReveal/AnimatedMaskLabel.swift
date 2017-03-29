@@ -52,6 +52,7 @@ class AnimatedMaskLabel: UIView {
   @IBInspectable var text: String! {
     didSet {
       setNeedsDisplay()
+        UIGraphicsBeginImageContextWithOptions(frame.size, false, 0)
     }
   }
   
