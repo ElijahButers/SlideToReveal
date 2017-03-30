@@ -57,6 +57,11 @@ class AnimatedMaskLabel: UIView {
         text.draw(in: bounds, withAttributes: textAttributes)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+        
+        let maskLayer = CALayer()
+        maskLayer.backgroundColor = UIColor.clear.cgColor
+        maskLayer.frame = bounds.offsetBy(dx: bounds.size.width, dy: 0)
+        maskLayer.contents = image?.cgImage
     }
   }
   
